@@ -1,0 +1,105 @@
+-----------------------------------------------------------------------------------------
+What command did you use to generate the keypair?
+gpg --gen-key
+
+
+
+-----------------------------------------------------------------------------------------
+Which user identity(ities) are assigned to the key?
+
+
+
+-----------------------------------------------------------------------------------------
+What is the fingerprint of your key?
+0BAF 553C 6BCD 01D3 BF54  B18B EFAB 1122 5CC0 BF28
+
+
+
+-----------------------------------------------------------------------------------------
+What subkey(s) are attached to your key? What is the purpose of the subkeys?
+sub   2048R/CD563058 2017-11-06 [expires: 2018-02-04]
+
+
+
+
+
+-----------------------------------------------------------------------------------------
+What commands did you use for importing, checking and signing the key?
+Importing: gpg --import <file>
+Checking: gpg --fingerprint
+followed by checking on the website
+
+Signing: 
+	- create a keyring (gpg --gen-key)
+	- sign with the generated key
+-----------------------------------------------------------------------------------------
+If you would not trust the fingerprint of the course, but you trust Sonja,
+what steps and commands would you need to check the course key's validity?
+
+
+
+-----------------------------------------------------------------------------------------
+What is the difference between a normal and a local key signature?
+Local key signature is a signature that is one available locally on the computer and is lost if the 
+key is sent to another computer.
+
+Normal key signature is a signature that is kept even after it is sent to another computer.
+
+
+
+-----------------------------------------------------------------------------------------
+What commands did you use for exporting the key and importing the signed key?
+
+
+
+-----------------------------------------------------------------------------------------
+What command can you use to list all signatures on your key?
+
+
+
+-----------------------------------------------------------------------------------------
+The default for exporting a key is to only export the public key. 
+In what situations would you want to export your private key?
+
+
+
+-----------------------------------------------------------------------------------------
+What command(s) did you use to add an identity?
+
+
+
+-----------------------------------------------------------------------------------------
+How can you list all identities of a key?
+
+
+
+-----------------------------------------------------------------------------------------
+What steps and commands did you and your classmate need to perform in order to sign your key?
+gpg --import <filename>
+gpg --fingerprint (Check fingerprint)
+gpg --sign-key <email-adress>
+
+-----------------------------------------------------------------------------------------
+Should the system trust your key now, after you presented another signature on it? Why/why not?
+Only if the system trusts the other signature.
+-----------------------------------------------------------------------------------------
+When you sign another classmate's key, you should compare the fingerprint before signing it.
+Why is this important?
+-----------------------------------------------------------------------------------------
+What command(s) did you use to verify a signed message?
+-----------------------------------------------------------------------------------------
+What does it mean, if a message is correctly signed?
+-----------------------------------------------------------------------------------------
+Which key did you use to sign the reply?
+-----------------------------------------------------------------------------------------
+What command(s) did you use to decrypt an encrypted message?
+-----------------------------------------------------------------------------------------
+How did you check that no one else was able to read the message?
+-----------------------------------------------------------------------------------------
+Which key did you use to make the reply confidential?
+-----------------------------------------------------------------------------------------
+What command(s) did you use to verify a signed and encrypted?
+-----------------------------------------------------------------------------------------
+Which key(s) did you use to secure the reply?
+-----------------------------------------------------------------------------------------
+	
