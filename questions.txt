@@ -32,6 +32,7 @@ followed by checking on the website
 Signing: 
 	- create a keyring (gpg --gen-key)
 	- sign with the generated key
+		gpg --lsign-key gpg-both@dasak.csc.kth.se
 -----------------------------------------------------------------------------------------
 If you would not trust the fingerprint of the course, but you trust Sonja,
 what steps and commands would you need to check the course key's validity?
@@ -65,16 +66,18 @@ In what situations would you want to export your private key?
 
 -----------------------------------------------------------------------------------------
 What command(s) did you use to add an identity?
-
+gpg --edit-key nilund@kth.se
+adduid <lägg till massa skit>
 
 
 -----------------------------------------------------------------------------------------
 How can you list all identities of a key?
-
-
+gpg --edit-key nilund@kth.se
+list eller uid
 
 -----------------------------------------------------------------------------------------
 What steps and commands did you and your classmate need to perform in order to sign your key?
+gpg --armor --export > filnamn (för att spara nyckel till en fil)
 gpg --import <filename>
 gpg --fingerprint (Check fingerprint)
 gpg --sign-key <email-adress>
